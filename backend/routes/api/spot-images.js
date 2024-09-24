@@ -2,8 +2,11 @@ const express = require('express');
 const{ Op } = require('sequelize');
 
 
-const { Spot,bookings,reviewImages,reviews,User,sequelize} = require('../../db/models');
+const { Spot,bookings, reviewImages,reviews,User,sequelize} = require('../../db/models');
 
+
+
+const { requireAuthentication, respondWith403, respondWithSuccessfulDelete } = require('../../utils/auth');
 
 const { validateSpot, validateReview, validateBooking, analyzeErrors } = require('../api/validators.js');
 
