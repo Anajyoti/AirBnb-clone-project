@@ -24,3 +24,4 @@ router.delete('/:imageId',async(req,res) => {
   }
 
 });
+module.exports = router;

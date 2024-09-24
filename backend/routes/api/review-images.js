@@ -16,3 +16,4 @@ router.delete('/:imageId',async(req, res) => {
       "statusCode": 404})
   }
 })
+module.exports = router;
