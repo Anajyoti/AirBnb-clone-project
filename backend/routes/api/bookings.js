@@ -63,3 +63,4 @@ router.delete('/bookings/:id', async (req, res) => {
     res.status(500).json({ error: 'Failed to delete booking', details: err.message });
   }
 });
+module.exports = router;
