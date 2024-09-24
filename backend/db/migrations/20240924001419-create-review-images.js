@@ -2,26 +2,20 @@
 /** @type {import('sequelize-cli').Migration} */
 module.exports = {
   async up(queryInterface, Sequelize) {
-    await queryInterface.createTable('reviews', {
+    await queryInterface.createTable('reviewImages', {
       id: {
         allowNull: false,
         autoIncrement: true,
         primaryKey: true,
         type: Sequelize.INTEGER
       },
-      userId: {
+      reviewId: {
         type: Sequelize.INTEGER,
         allowNull:false
       },
-      spotId: {
-        type:Sequelize.INTEGER,
+      url: {
+        type: Sequelize.TEXT,
         allowNull:false
-      },
-      review: {
-        type:Sequelize.STRING
-      },
-      stars:{
-        type:Sequelize.INTEGER
       },
       createdAt: {
         allowNull: false,
@@ -36,6 +30,6 @@ module.exports = {
     });
   },
   async down(queryInterface, Sequelize) {
-    await queryInterface.dropTable('reviews');
+    await queryInterface.dropTable('reviewImages');
   }
 };

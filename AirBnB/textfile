@@ -1,0 +1,69 @@
+Table Users {
+  id int
+  firstname varchar
+  lastname varchar
+  username varchar
+  hashedPassword varchar
+  role varchar
+  email varchar
+  created_at timestamp
+  updated_at timestamp
+}
+
+Table Spot {
+  id int
+  ownerId int 
+  address varchar
+  city varchar
+  state varchar 
+  country varchar
+  lat decimal
+  lng decimal
+  name varchar
+  descirption varchar
+  price decimal
+  createdAt timestamp
+  updatedAt timestamp
+}
+Ref: Spot.ownerId > Users.id
+
+Table SpotImages {
+id int
+spotId int
+url varchar
+preview boolean 
+createdAt timestamp
+updatedAt timestamp
+}
+Ref: Spot.id < SpotImages.id
+Table Reviews {
+id int
+userId int
+spotId int
+review varchar
+stars int
+createdAt timestamp
+updatedAt timestamp
+}
+Ref: Spot.id < Reviews.spotId
+Ref: Users.id < Reviews.userId
+
+Table ReviewImages {
+  id int
+  reviewId int
+  url varchar
+  createdAt timestamp
+  updatedAt timestamp
+}
+Ref: Reviews.id < ReviewImages.reviewId
+Table Bookings {
+  id int
+  spotId int
+  userId int
+  startDate date
+  endDate date
+  createdAt timestamp
+  updatedAt timestamp
+}
+Ref: Spot.id < Bookings.spotId
+Ref: Users.id < Bookings.userId
