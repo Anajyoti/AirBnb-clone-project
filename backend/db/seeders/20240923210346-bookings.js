@@ -14,7 +14,7 @@ module.exports = {
     */
    await queryInterface.bulkInsert('bookings',[
     {
-      sportId: 1,
+      spotId: 1,
       userId: 2,
       startDate: "2021-11-12",
       endDate: "2021-11-26"
@@ -26,49 +26,49 @@ module.exports = {
       endDate: "2022-10-26"
     },
     {
-      sportId: 3,
+      spotId: 3,
       userId: 3,
       startDate: "2020-09-12",
       endDate: "2021-09-26"
     },
     {
-      sportId: 2,
+      spotId: 2,
       userId: 3,
       startDate: "2020-06-12",
       endDate: "2021-06-26"
     },
     {
-      sportId: 6,
+      spotId: 6,
       userId: 3,
       startDate: "2020-05-12",
       endDate: "2022-05-26"
     },
     {
-      sportId: 5,
+      spotId: 5,
       userId: 4,
       startDate: "2020-04-12",
       endDate: "2022-04-26"
     },
     {
-      sportId: 8,
+      spotId: 8,
       userId: 5,
       startDate: "2020-08-01",
       endDate: "2022-09-16"
     },
     {
-      sportId: 2,
+      spotId: 2,
       userId: 19,
       startDate: "2020-07-12",
       endDate: "2023-08-06"
     },
     {
-      sportId: 5,
+      spotId: 5,
       userId: 13,
       startDate: "2020-02-12",
       endDate: "2022-03-26"
     },
     {
-      sportId: 2,
+      spotId: 2,
       userId: 11,
       startDate: "2020-08-12",
       endDate: "2022-04-26"
