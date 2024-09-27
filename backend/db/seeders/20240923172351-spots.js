@@ -12,7 +12,7 @@ module.exports = {
      *   isBetaMember: false
      * }], {});
     */
-   await queryInterface.bulkInsert('Spot',[
+   await queryInterface.bulkInsert('Spots',[
     {
     "ownerId": 1,
     "address": "556 Tracy Street",
@@ -266,6 +266,6 @@ module.exports = {
      * Example:
      * await queryInterface.bulkDelete('People', null, {});
      */
-    await queryInterface.bulkDelete('Spot', null, {});
+    await queryInterface.bulkDelete('Spots', null, {});
   }
 };

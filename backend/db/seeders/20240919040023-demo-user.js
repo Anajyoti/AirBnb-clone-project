@@ -31,7 +31,78 @@ module.exports = {
         firstName: 'Taehyung',
         lastName: 'Kim',
         hashedPassword: bcrypt.hashSync('password3')
+      },
+
+      {
+        email: 'user3@user.io',
+        username: 'FakeUser3',
+        firstName: 'Yoongi',
+        lastName: 'Min',
+        hashedPassword: bcrypt.hashSync('password4')
+      },
+
+      {
+        email: 'user4@user.io',
+        username: 'FakeUser4',
+        firstName: 'Jimin',
+        lastName: 'Park',
+        hashedPassword: bcrypt.hashSync('password5')
+      },
+
+      {
+        email: 'user5@user.io',
+        username: 'FakeUser5',
+        firstName: 'Selina',
+        lastName: 'Gomez',
+        hashedPassword: bcrypt.hashSync('password6')
+      },
+      {
+        email: 'user6@user.io',
+        username: 'FakeUser6',
+        firstName: 'Sabrina',
+        lastName: 'Carpenter',
+        hashedPassword: bcrypt.hashSync('password7')
+      },
+
+      {
+        email: 'user7@user.io',
+        username: 'FakeUser7',
+        firstName: 'Emma',
+        lastName: 'Watson',
+        hashedPassword: bcrypt.hashSync('password8')
+      },
+
+      {
+        email: 'user8@user.io',
+        username: 'FakeUser8',
+        firstName: 'Toph',
+        lastName: 'Beifong',
+        hashedPassword: bcrypt.hashSync('password9')
+      },
+
+      {
+        email: 'user9@user.io',
+        username: 'FakeUser9',
+        firstName: 'Asami',
+        lastName: 'Sato',
+        hashedPassword: bcrypt.hashSync('password10')
+      },
+      {
+        email: 'user10@user.io',
+        username: 'FakeUser10',
+        firstName: 'Harry',
+        lastName: 'Potter',
+        hashedPassword: bcrypt.hashSync('password11')
+      },
+
+      {
+        email: 'user11@user.io',
+        username: 'FakeUser11',
+        firstName: 'Zuko',
+        lastName: 'Firelord',
+        hashedPassword: bcrypt.hashSync('password12')
       }
+
     ], { validate: true });
   },
 
