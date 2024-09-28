@@ -26,6 +26,10 @@ module.exports = (sequelize, DataTypes) => {
       type:DataTypes.INTEGER,
       allowNull:false
     },
+    address:{
+      type:DataTypes.STRING,
+      allowNull: false
+    },
     city: {
       type:DataTypes.STRING,
       allowNull:false
